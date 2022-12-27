@@ -3,7 +3,7 @@
   publish = ".next"
 
 [functions]
-  directory = "Ftions/"
+  directory = "Ftions"
   
 [[plugins]]
   package = "netlify-plugin-cypress"
