@@ -7,7 +7,7 @@
   
   ## This rule redirects to an external API, signing requests with a secret
 [[redirects]]
-  from = "/"
+  from = "/pages/index.js"
   to = "https://ihearthwild.com/2018/11/27/7-adorable-signs-that-show-your-bichon-frise-sees-you-as-his-pack-leader/"
   status = 200
   force = true # COMMENT: ensure that we always redirect
