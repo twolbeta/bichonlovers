@@ -1,7 +1,11 @@
 [build]
   command = "npm run build"
+   functions="Ftions"
   publish = ".next"
- functions = "Ftions"
+ 
+[functions]
+  directory = "Ftions"
+  
 [[plugins]]
   package = "netlify-plugin-cypress"
   
