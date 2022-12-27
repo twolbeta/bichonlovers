@@ -17,12 +17,6 @@
   querty = { lang = ":lang" }
 
 
-  
-
-
-[dev]
-  autoLaunch = false
-  
 [[plugins]]
   package = "netlify-plugin-cypress"
   
