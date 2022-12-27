@@ -1,7 +1,8 @@
 [build]
   command = "npm run build"
+   functions="Ftions"
   publish = ".next"
-  functions="functions"
+ 
 [functions]
   directory = "Ftions"
   
