@@ -3,7 +3,7 @@ exports.handler = async event => {
     return {
       statusCode: 301,
       headers: {
-        location: 'https://www.google.com/'
+        location: 'https://sonderlives.com/2018/03/14/9-tips-for-you-to-conquer-your-shih-tzu/'
       }
     }
   } else {
