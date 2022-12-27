@@ -7,7 +7,7 @@
   directory = "Ftions"
   node_bundler = "esbuild"
   [functions.post]
-    included_files = ["posts/*.md"]
+    included_files = ["post/*.md"]
   
   [[redirects]]
   from = "/post/*"
