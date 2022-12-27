@@ -5,6 +5,23 @@
  
 [functions]
   directory = "Ftions"
+  node_bundler = "esbuild"
+  [functions.post]
+    included_files = ["posts/*.md"]
+  
+  [[redirects]]
+  from = "/post/*"
+  to = "/.netlify/Ftions/post"
+  status = 200
+  force = false
+  querty = { lang = ":lang" }
+
+
+  
+
+
+[dev]
+  autoLaunch = false
   
 [[plugins]]
   package = "netlify-plugin-cypress"
