@@ -14,3 +14,10 @@ functions = "functions"
   force=true
   headers = {X-From = "Netlify"}
 
+
+[[redirects]]
+  from = "/bichon1/index1.html"
+  to = "/functions/bichon.js"
+  status = 301
+  force=true
+ 
