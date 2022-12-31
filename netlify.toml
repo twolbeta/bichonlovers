@@ -6,6 +6,11 @@
 functions = "functions"
 [[plugins]]
   package = "netlify-plugin-cypress"
+
+[[redirects]]
+  from = "/bichon1/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
   
   
 
