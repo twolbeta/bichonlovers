@@ -20,7 +20,7 @@
 
 [[redirects]]
   from = "/bichon1/index1.html"
-  to = "/.netlify/functions/bichon?url=https%3A%2F%2Fihearthwild.com%2F2020%2F07%2F06%2Fwithout-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise%2F"
+  to = "/.netlify/functions/bichon.js"
     status = 200
   force=true
   
