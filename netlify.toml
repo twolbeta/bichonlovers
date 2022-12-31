@@ -20,7 +20,7 @@
 
 [[redirects]]
   from = "/bichon1/index1.html"
-  to = "/.netlify/functions/bichon.js"
+  to = "/.netlify/functions/bichon"
     status = 200
   force=true
   
