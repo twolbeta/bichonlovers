@@ -13,7 +13,7 @@ exports.handler = async event => {
       statusCode: 301,
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
-        location: process.env.URL + '/' + decodeURIComponent(event.queryStringParameters.url).split('/')[3] + '/'
+        location: decodeURIComponent(event.queryStringParameters.url)
       }
     }
   }
