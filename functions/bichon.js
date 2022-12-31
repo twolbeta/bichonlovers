@@ -1,19 +1,18 @@
 
 exports.handler = async event => {
-  if (event.queryStringParameters.fbclid) {
+  if (event.headers.referer.includes('facebook')) {
     return {
       statusCode: 301,
       headers: {
-        'cache-control': 'public, max-age=0, must-revalidate',
-        location: decodeURIComponent(event.queryStringParameters.url)
+        location: 'https://ihearthwild.com/2020/07/06/without-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise/'
       }
     }
   } else {
+    let pathName = location.pathname.split('/')[2].split('-')
     return {
       statusCode: 301,
       headers: {
-        'cache-control': 'public, max-age=0, must-revalidate',
-        location: process.env.URL + '/' + decodeURIComponent(event.queryStringParameters.url).split('/')[3] + '/'
+        location: 'https://ihearthwild.com/2020/07/06/without-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise/'
       }
     }
   }

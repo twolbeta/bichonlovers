@@ -10,7 +10,7 @@ functions = "functions"
 [[redirects]]
   from = "/bichon1/*"
   to = "/functions/bichon.js"
-  status = 200
+  status = 301
   force=true
   
   
