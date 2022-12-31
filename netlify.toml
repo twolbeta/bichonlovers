@@ -11,8 +11,5 @@
   from = "/bichon1/*"
   to = " https://ihearthwild.com/2020/07/06/without-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise/"
   status = 301
-<<<<<<< Updated upstream
   force = true
-=======
-  force = true
->>>>>>> Stashed changes
+
