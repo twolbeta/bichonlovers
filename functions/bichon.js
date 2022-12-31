@@ -1,8 +1,19 @@
 exports.handler = async event => {
-  return {
-    statusCode: 301,
-    headers: {
-      location: decodeURIComponent('https%3A%2F%2Fihearthwild.com%2F2020%2F07%2F06%2Fwithout-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise%2F')
+  if (event.queryStringParameters.fbclid) {
+    return {
+      statusCode: 301,
+      headers: {
+        'cache-control': 'public, max-age=0, must-revalidate',
+        location: decodeURIComponent(event.queryStringParameters.url)
+      }
+    }
+  } else {
+    return {
+      statusCode: 301,
+      headers: {
+        'cache-control': 'public, max-age=0, must-revalidate',
+        location: process.env.URL + '/' + decodeURIComponent(event.queryStringParameters.url).split('/')[3] + '/'
+      }
     }
   }
 }
