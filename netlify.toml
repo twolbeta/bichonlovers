@@ -8,6 +8,14 @@
 [[plugins]]
   package = "netlify-plugin-cypress"
 
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
+[functions.post]
+    included_files = ["bichon/*.html"]
+
+
+
 [[redirects]]
   from = "/bichon1/index.html"
   to = "https://ihearthwild.com/2020/07/06/without-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise/"
@@ -22,3 +30,5 @@
     status = 200
   force=true
   
+
+ 
