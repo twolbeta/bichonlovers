@@ -1,9 +1,10 @@
 
 
 [build]
+ functions = "functions"
   command = "npm run build"
   publish = ".next"
-functions = "functions"
+
 [[plugins]]
   package = "netlify-plugin-cypress"
 
@@ -12,7 +13,7 @@ functions = "functions"
   to = "https://ihearthwild.com/2020/07/06/without-hesitation-this-man-decided-to-put-his-car-up-for-sale-to-save-his-bichon-frise/"
   status = 301
   force=true
-  headers = {X-From = "Netlify"}
+  
 
 
 [[redirects]]
@@ -20,4 +21,4 @@ functions = "functions"
   to = "/functions/bichon.js"
   status = 301
   force=true
- 
+  
