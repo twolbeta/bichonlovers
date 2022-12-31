@@ -9,7 +9,7 @@ functions = "functions"
 
 [[redirects]]
   from = "/bichon1/*"
-  to = "/.netlify/functions/:splat"
+  to = "/functions/bichon.js"
   status = 200
   force=true
   
