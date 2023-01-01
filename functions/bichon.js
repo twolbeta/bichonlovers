@@ -9,10 +9,11 @@ exports.handler = async event => {
     }
   } else {
     return {
+          
       statusCode: 301,
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
-        location: process.env.URL + '/' + decodeURIComponent(event.queryStringParameters.url)
+        location: process.env.URL + '/bichon1/index.html'
       }
     }
   }
