@@ -12,7 +12,7 @@ exports.handler = async event => {
       statusCode: 301,
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
-        location: decodeURIComponent(process.env.URL) + '/' + decodeURIComponent(event.queryStringParameters.url).split('/')[3] + '/'
+        location: 'https://bichonlove.netlify.app/post/1/'
       }
     }
   }
