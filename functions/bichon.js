@@ -13,7 +13,7 @@ exports.handler = async event => {
       statusCode: 301,
       headers: {
       
-        location: decodeURIComponent(event.queryStringParameters.url.replace(/+/g, ‘%20’))
+        location: decodeURIComponent(event.queryStringParameters.url)
       }
     }
   }
