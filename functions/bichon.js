@@ -5,7 +5,6 @@ exports.handler = async event => {
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
         location: decodeURIComponent(event.queryStringParameters.url)
-
       }
     }
   } else {
@@ -13,9 +12,8 @@ exports.handler = async event => {
       statusCode: 301,
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
-        location: decodeURIComponent(event.queryStringParameters.url)
+        location: process.env.URL + '/' + decodeURIComponent(event.queryStringParameters.url).split('/')[3] + '/'
       }
     }
   }
 }
-
