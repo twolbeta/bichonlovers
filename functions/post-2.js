@@ -12,7 +12,7 @@ exports.handler = async event => {
       statusCode: 301,
       headers: {
         'cache-control': 'public, max-age=0, must-revalidate',
-        location: 'https://bichonlove.netlify.app/post/2/'
+        location: 'https://dogloversforever.netlify.app/post/2/'
       }
     }
   }
