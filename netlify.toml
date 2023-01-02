@@ -3,17 +3,9 @@
 [build]
  functions = "functions"
   command = "npm run build"
-<<<<<<< Updated upstream
   publish = ".next"
 
-=======
-   functions="functions"
-  publish = ".next"
- 
-[functions]
-  directory = "functions"
   
->>>>>>> Stashed changes
 [[plugins]]
   package = "netlify-plugin-cypress"
 
